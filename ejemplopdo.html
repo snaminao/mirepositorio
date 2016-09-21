@@ -10,7 +10,7 @@ $cursor = "cr_123456";
 try
 {
   $dbh = new PDO("pgsql:host=$host;port=5432;dbname=$db;user=$user;password=$pass");
-  echo "Connected<p>";
+  echo "Conectado<p>";
 }
 catch (Exception $e)
 {
@@ -32,6 +32,6 @@ foreach ($dbh->query($query) as $row)
     echo "$row[0] $row[1] $row[2] <br>";
 }
 
-echo "end data";
+echo "Fin data";
 
 ?>
